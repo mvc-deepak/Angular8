@@ -27,7 +27,7 @@ export class ShowDepComponent implements OnInit {
     }
 
   listData : MatTableDataSource<any>;
-  displayedColumns : string[] = ['Options', 'DepartmentID', 'DepartmentName']
+  displayedColumns : string[] = ['Options', 'id', 'DepartmentName']
 
   @ViewChild(MatSort, null) sort: MatSort;
 
@@ -36,8 +36,8 @@ export class ShowDepComponent implements OnInit {
   }
 
   refreshDepList(){
-    //var dummyData = [{DepartmentID:1, DepartmentName:"IT"},
-    //{DepartmentID:2, DepartmentName:"Finance"}] 
+    //var dummyData = [{id:1, DepartmentName:"IT"},
+    //{id:2, DepartmentName:"Finance"}] 
     //this.listData = new MatTableDataSource(dummyData);
 this.service.getDepList().subscribe(data => {
   this.listData  = new MatTableDataSource(data);

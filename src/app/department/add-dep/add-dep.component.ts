@@ -28,7 +28,7 @@ this.resetForm();
     form.resetForm();
 
     this.service.formData = {
-      DepartmentID:0,
+      id:0,
       DepartmentName:''
     }
   }

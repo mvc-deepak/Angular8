@@ -1,5 +1,5 @@
 
 export class Department{
-    DepartmentID : number;
+    id : number;
     DepartmentName : string;
 }

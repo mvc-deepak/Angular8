@@ -15,7 +15,8 @@ export class DepartmentService {
 
   formData: Department;
 
-  readonly APIUrl = "http://localhost:49902/api";
+  //readonly APIUrl = "http://localhost:49902/api";
+  readonly APIUrl = "http://localhost:3000/api";
 
   getDepList(): Observable<Department[]> {
     return this.http.get<Department[]>(this.APIUrl + '/department');
@@ -30,7 +31,8 @@ export class DepartmentService {
   }
 
   updateDepartment(dep:Department) {
-    return this.http.put(this.APIUrl+'/department',dep);
+    var url= this.APIUrl+'/department/'+ dep.id;
+    return this.http.put(url,dep);
   }
 
 

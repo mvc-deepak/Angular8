@@ -1,0 +1,56 @@
+{
+  "employee": [
+    {
+      "EmployeeID": 1,
+      "EmployeeName": "Sam",
+      "Department": "Finance",
+      "MailID": "sam123@gmail.com",
+      "DOJ": "2019-05-22"
+    },
+    {
+      "EmployeeID": 2,
+      "EmployeeName": "Bob t",
+      "Department": "IT",
+      "MailID": "bob123@gmail.com",
+      "DOJ": "2019-06-10"
+    },
+    {
+      "EmployeeID": 21,
+      "EmployeeName": "deepak",
+      "Department": "HR",
+      "MailID": "deepak@mailinator.com",
+      "DOJ": "2020-03-18"
+    }
+  ],
+  "department": [
+    {
+      "id": 1,
+      "DepartmentName": "Finance test"
+    },
+    {
+      "id": 2,
+      "DepartmentName": "IT"
+    },
+    {
+      "id": 3,
+      "DepartmentName": "HR Test d"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
